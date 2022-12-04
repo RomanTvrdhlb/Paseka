@@ -1,0 +1,34 @@
+.main-calendar {
+  max-width: 303px;
+  padding: clamp(7px, 0.781vw, 15px) clamp(10px, 1.042vw, 20px);
+
+  background: var(--bg-a);
+  border-radius: 12px;
+  box-shadow: 0 12px 33px rgba(62, 73, 84, 0.08);
+  &__current {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-family);
+    color: var(--color-f);
+
+    grid-gap: clamp(5px, 0.729vw, 14px);
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-family);
+    color: var(--color-f);
+
+    grid-gap: clamp(5px, 0.729vw, 14px);
+  }
+}

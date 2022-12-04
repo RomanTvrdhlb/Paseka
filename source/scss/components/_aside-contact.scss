@@ -1,0 +1,107 @@
+.aside-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 clamp(15px, 1.563vw, 30px);
+
+  grid-gap: clamp(10px, 1.042vw, 20px);
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    padding: clamp(20px, 1.563vw, 30px) clamp(35px, 2.344vw, 45px);
+
+    background-color: var(--bg-a);
+    border-radius: 10px;
+
+    grid-gap: clamp(10px, 1.042vw, 20px);
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-gap: 14px;
+  }
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-d);
+    text-transform: uppercase;
+  }
+
+  &__about {
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(16px, 0.938vw, 18px);
+    line-height: 150%;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-d);
+
+    &-first {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      font-family: var(--font-family);
+      text-align: center;
+      color: var(--color-d);
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--color-c);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: clamp(8px, 0.573vw, 11px) clamp(12px, 0.938vw, 18px);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(14px, 0.833vw, 16px);
+    line-height: 120%;
+    font-family: var(--font-family1);
+    text-align: center;
+    color: var(--color-a);
+
+    background-image: url(../img/sprite/bgbtn.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__political {
+    padding: 0  31px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="index">
+        <aside class="index-aside">
+          <div class="index-aside__box">
+            <a href="#" class="logo">
+              <svg width='147' height='60'>
+                <use href='img/sprite/sprite.svg#logo'></use>
+              </svg>
+            </a>
+
+            <nav class="aside-nav">
+              <ul class="aside-nav__list">
+                <li class="aside-nav__item">
+                  <button class="aside-nav__btn active" type="button" data-tab="1">
+                    <span class="aside-nav__icon">
+                      <svg width='18' height='20'>
+                        <use href='img/sprite/sprite.svg#home'></use>
+                      </svg>
+                    </span>
+                    Сводка</button>
+                </li>
+                <li class="aside-nav__item">
+                  <button class="aside-nav__btn" type="button" data-tab="2">
+                    <span class="aside-nav__icon">
+                      <svg width='18' height='20'>
+                        <use href='img/sprite/sprite.svg#imgq'></use>
+                      </svg>
+                    </span>
+                    Сделки</button>
+                </li>
+                <li class="aside-nav__item">
+                  <button class="aside-nav__btn" type="button" data-tab="3">
+                    <span class="aside-nav__icon">
+                      <svg width='18' height='20'>
+                        <use href='img/sprite/sprite.svg#img1'></use>
+                      </svg>
+                    </span>
+                    Аналитика</button>
+
+                  <ul class="aside-sublist">
+                    <li class="aside-sublist__item">
+                      <button class="aside-sublist__btn" type="button">Статистика</button>
+                    </li>
+                    <li class="aside-sublist__item">
+                      <button class="aside-sublist__btn" type="button">Фразы</button>
+                    </li>
+                    <li class="aside-sublist__item">
+                      <button class="aside-sublist__btn" type="button">Площадки</button>
+                    </li>
+                    <li class="aside-sublist__item">
+                      <button class="aside-sublist__btn" type="button">Регионы</button>
+                    </li>
+                    <li class="aside-sublist__item">
+                      <button class="aside-sublist__btn" type="button">Объявления</button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="aside-nav__item">
+                  <button class="aside-nav__btn" type="button" data-tab="4">
+                    <span class="aside-nav__icon">
+                      <svg width='18' height='20'>
+                        <use href='img/sprite/sprite.svg#mess'></use>
+                      </svg>
+                    </span>
+                    Настройки форм</button>
+                </li>
+                <li class="aside-nav__item">
+                  <button class="aside-nav__btn" type="button" data-tab="5">
+                    <span class="aside-nav__icon">
+                      <svg width='18' height='20'>
+                        <use href='img/sprite/sprite.svg#img2'></use>
+                      </svg>
+                    </span>
+                    Финансы</button>
+                </li>
+                <li class="aside-nav__item">
+                  <button class="aside-nav__btn" type="button" data-tab="6">
+                    <span class="aside-nav__icon">
+                      <svg width='18' height='20'>
+                        <use href='img/sprite/sprite.svg#gear'></use>
+                      </svg>
+                    </span>
+                    Подключение</button>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="aside-contact">
+              <ul class="aside-contact__list">
+                <li class="aside-contact__item">
+                  <span class="aside-contact__icon">
+                    <svg width='81' height='90'>
+                      <use href='img/sprite/sprite.svg#man'></use>
+                    </svg>
+                  </span>
+                  <span class="aside-contact__name">Ваш <br>
+                    Менеджер</span>
+                </li>
+                <li class="aside-contact__item">
+                  <div class="aside-contact__inner">
+                    <span class="aside-contact__about">Вавилен Татарский</span>
+                    <span class="aside-contact__about-first">маркетолог-криэйтер</span>
+                    <a class="aside-contact__link">info@nii-pchelovodstva.ru</a>
+                  </div>
+                </li>
+                <li class="aside-contact__item">
+                  <button class="aside-contact__btn">Написать</button>
+                </li>
+              </ul>
+
+              <span class="aside-contact__political">© 2021 Paseka</span>
+            </div>
+
+          </div>
+        </aside>
+
+        <section class="index-first" data-tabs-parrent>
+          <div class="container container--mini">
+            <div class="index-first__box">
+              <div class="main-top">
+                <h1 class="main-top__title">Сводка</h1>
+                <div class='main-calendar select'>
+                  <input type='hidden' class='main-calendar__input select__input' name='default'>
+                  <div class='main-calendar__header select__header'>
+                    <div class='main-calendar__current select__current'>
+                      <svg width='26' height='28'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      31 Авг. 2021 - 06 Сен. 2021
+                    </div>
+                    <div class='select__icon'>
+                      <svg width="14" height="9">
+                        <use href='img/sprite/sprite.svg#arrow-b'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='main-calendar__body select__body'>
+                    <ul class='main-calendar__wrapp select__wrapp'>
+                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        31 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        1 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        21 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        23 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='main-wallet select'>
+                  <input type='hidden' class='main-wallet__input select__input' name='default'>
+                  <div class='main-wallet__header select__header'>
+                    <div class='main-wallet__current select__current'>
+                      <svg width='26' height='28'>
+                        <use href='img/sprite/sprite.svg#img3'></use>
+                      </svg>
+                      24 535,00 ₽
+                    </div>
+                    <div class='select__icon'>
+                      <svg width="14" height="9">
+                        <use href='img/sprite/sprite.svg#arrow-b'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='main-wallet__body select__body'>
+                    <ul class='main-wallet__wrapp select__wrapp'>
+                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#img3'></use>
+                        </svg>
+                        24 535,00 ₽
+                      </li>
+                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#img3'></use>
+                        </svg>
+                        42 535,00 ₽
+                      </li>
+                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#img3'></use>
+                        </svg>
+                        10 535,00 ₽
+                      </li>
+                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#img3'></use>
+                        </svg>
+                        4 535,00 ₽
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-top__inner">
+                  <span class="main-top__value">id: 534789</span>
+                  <span class="main-top__name">Дмитрий Котов</span>
+                  <div class="main-top__picture">
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img1.webp'>
+                      <img width='70' height='70' src='img/index/img1.png' alt='image'>
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="main-info">
+                <li class="main-info__item">
+                  <div class="main-info__card">
+                    <div class="main-info__about">
+                      <span class="main-info__value">56
+                        <b class="main-info__percent">+4%</b>
+                      </span>
+                      <span class="main-info__name">Заявки</span>
+
+                    </div>
+                    <span class="main-info__icon">
+                      <svg width='32' height='33'>
+                        <use href='img/sprite/sprite.svg#img4'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li class="main-info__item">
+                  <div class="main-info__card">
+                    <div class="main-info__about">
+                      <span class="main-info__value">105
+                        <b class="main-info__percent">-10%</b>
+                      </span>
+                      <span class="main-info__name">Звонки</span>
+
+                    </div>
+                    <span class="main-info__icon">
+                      <svg width='32' height='33'>
+                        <use href='img/sprite/sprite.svg#img5'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li class="main-info__item">
+                  <div class="main-info__card">
+                    <div class="main-info__about">
+                      <span class="main-info__value">140
+                        <b class="main-info__percent">+39%</b>
+                      </span>
+                      <span class="main-info__name">Заявки с ловца</span>
+
+                    </div>
+                    <span class="main-info__icon">
+                      <svg width='32' height='33'>
+                        <use href='img/sprite/sprite.svg#img6'></use>
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li class="main-info__item">
+                  <div class="main-info__card">
+                    <div class="main-info__about">
+                      <span class="main-info__value">176,00 ₽
+                        <b class="main-info__percent">+140%</b>
+                      </span>
+                      <span class="main-info__name">Стоимость заявки</span>
+
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="main-analitics">
+                <ul class="main-analitics__nav">
+                  <li class="main-analitics__item">
+                    <h3 class="main-analitics__title">Аналитика</h3>
+                    <a class="main-analitics__link">подробнее</a>
+                    <canvas class="main-analitics__chart active" id="myGrafic" style="width: 870px;"></canvas>
+
+                  </li>
+                  <li class="main-analitics__item">
+                   <button class="main-analitics__btn" type="button" data-tab="1">Посетители</button>
+                   <button class="main-analitics__btn active" type="button" data-tab="2">Расходы</button>
+                  </li>
+                </ul>
+                <ul class="main-analitics__content">
+                  <li class="main-analitics__item" data-tab-content="1"></li>
+                  <li class="main-analitics__item" data-tab-content="2">
+                   
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

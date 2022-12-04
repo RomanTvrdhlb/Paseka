@@ -1,0 +1,11 @@
+.index-aside {
+  background: var(--bg-c);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+
+    grid-gap: clamp(40px, 2.344vw, 45px);
+  }
+}

@@ -1,0 +1,84 @@
+.aside-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: clamp(30px, 3.177vw, 61px);
+
+
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+
+    grid-gap: clamp(20px, 1.979vw, 38px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: 47px;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 0.938vw, 18px);
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+
+    &:hover {
+      .aside-nav__icon {
+        transform: translateY(-50%) scale(1.2);
+      }
+    }
+    svg {
+      transition: all 0.4s;
+
+      fill: var(--bg-a);
+    }
+
+
+    &.active {
+      color: var(--color-c);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: -1;
+
+        width: 320px;
+        height: 94px;
+
+        background-image: url(../img/sprite/bg1.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 100% 100%;
+        transform: translateY(-50%);
+      }
+
+      svg {
+        fill: var(--svg-fill);
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+
+    transform: translateY(-50%);
+
+    transition: all 0.4s;
+  }
+}

@@ -1,0 +1,14 @@
+.aside-sublist {
+  display: flex;
+  flex-direction: column;
+
+  grid-gap: clamp(10px, 1.51vw, 29px);
+  &__btn {
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(14px, 0.938vw, 18px);
+    line-height: 120%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+  }
+}
