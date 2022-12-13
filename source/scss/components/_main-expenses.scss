@@ -1,0 +1,55 @@
+.main-expenses{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(10px, 1.563vw, 30px);
+
+    &__card{
+    display: grid;
+    grid-gap: 3px clamp(10px, 1.146vw, 22px);
+    grid-template-columns: auto 1fr;
+    background: var(--bg-a);
+    border-radius: 20px;
+    padding: clamp(10px, 1.615vw, 31px) clamp(5px, 0.781vw, 15px) clamp(10px, 1.615vw, 31px) clamp(15px, 1.224vw, 23.5px);
+        &--general{
+            .main-expenses__about{
+                display: inline;
+            }
+            box-shadow: 0px 12px 33px rgba(62, 73, 84, 0.08);
+        }
+    }
+
+    &__icon{
+        grid-row: span 3;
+    }
+
+    &__value{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(18px, 1.458vw, 20px);
+        line-height: 125%;    
+        color: var(--color-h);
+    }
+
+    &__about{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 120%;
+        color: var(--color-f);
+        display: none;
+    }
+
+    &__day{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-j);
+    }
+
+ 
+
+}

@@ -1,0 +1,101 @@
+.applications-list{
+    display: flex;
+    flex-direction: column;
+
+
+
+    &__item{
+        padding: 10px clamp(21px, 2.188vw, 42px);
+        display: grid;
+        grid-template-columns: 103px 87px 182px 210px 1fr;
+        align-items: center;
+        grid-gap: 64px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        transition: all .4s;
+
+        &:hover{
+            border: 3px solid var(--color-k);
+        }
+    }
+
+    &__type{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 1.094vw, 21px);
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-f);
+    }
+
+    &__time{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 300;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        color: var(--color-f);
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 300;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-f);
+
+        &-number{
+            font-weight: 500;
+        }
+    }
+
+    &__source{
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 300;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-c);
+
+
+        &-coments{
+            color: var(--color-f);
+            font-weight: 500;
+        }
+    }
+
+    &__status{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(25px, 2.604vw, 50px);
+    }
+
+    &__about{
+        min-width: 115px;
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 1.146vw, 22px);
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-f);
+    }
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 0.885vw, 17px);
+    }
+}

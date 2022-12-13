@@ -6,7 +6,8 @@
 
   <main>
     <div class="container">
-      <div class="index">
+      <div class="index" data-tabs-parrent>
+
         <aside class="index-aside">
           <div class="index-aside__box">
             <a href="#" class="logo">
@@ -122,15 +123,15 @@
           </div>
         </aside>
 
-        <section class="index-first" data-tabs-parrent>
+        <section class="index-first active" data-tab-content="1">
           <div class="container container--mini">
             <div class="index-first__box">
               <div class="main-top">
                 <h1 class="main-top__title">Сводка</h1>
-                <div class='main-calendar select'>
-                  <input type='hidden' class='main-calendar__input select__input' name='default'>
-                  <div class='main-calendar__header select__header'>
-                    <div class='main-calendar__current select__current'>
+                <div class='main-top__calendar main-select select'>
+                  <input type='hidden' class='main-select__input select__input' name='default'>
+                  <div class='main-select__header select__header'>
+                    <div class='main-select__current select__current'>
                       <svg width='26' height='28'>
                         <use href='img/sprite/sprite.svg#calendar'></use>
                       </svg>
@@ -142,27 +143,27 @@
                       </svg>
                     </div>
                   </div>
-                  <div class='main-calendar__body select__body'>
-                    <ul class='main-calendar__wrapp select__wrapp'>
-                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                  <div class='main-select__body select__body'>
+                    <ul class='main-select__wrapp select__wrapp'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#calendar'></use>
                         </svg>
                         31 Авг. 2021 - 06 Сен. 2021
                       </li>
-                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#calendar'></use>
                         </svg>
                         1 Авг. 2021 - 06 Сен. 2021
                       </li>
-                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#calendar'></use>
                         </svg>
                         21 Авг. 2021 - 06 Сен. 2021
                       </li>
-                      <li class='main-calendar__item select__item' data-choice='choosen'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#calendar'></use>
                         </svg>
@@ -171,10 +172,10 @@
                     </ul>
                   </div>
                 </div>
-                <div class='main-wallet select'>
-                  <input type='hidden' class='main-wallet__input select__input' name='default'>
-                  <div class='main-wallet__header select__header'>
-                    <div class='main-wallet__current select__current'>
+                <div class='main-top__wallet main-select select'>
+                  <input type='hidden' class='main-select__input select__input' name='default'>
+                  <div class='main-select__header select__header'>
+                    <div class='main-select__current select__current'>
                       <svg width='26' height='28'>
                         <use href='img/sprite/sprite.svg#img3'></use>
                       </svg>
@@ -186,27 +187,27 @@
                       </svg>
                     </div>
                   </div>
-                  <div class='main-wallet__body select__body'>
-                    <ul class='main-wallet__wrapp select__wrapp'>
-                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                  <div class='main-select__body select__body'>
+                    <ul class='main-select__wrapp select__wrapp'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#img3'></use>
                         </svg>
                         24 535,00 ₽
                       </li>
-                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#img3'></use>
                         </svg>
                         42 535,00 ₽
                       </li>
-                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#img3'></use>
                         </svg>
                         10 535,00 ₽
                       </li>
-                      <li class='main-wallet__item select__item' data-choice='choosen'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
                         <svg width='26' height='28'>
                           <use href='img/sprite/sprite.svg#img3'></use>
                         </svg>
@@ -277,7 +278,7 @@
                   </div>
                 </li>
                 <li class="main-info__item">
-                  <div class="main-info__card">
+                  <div class="main-info__card main-info__card--mode">
                     <div class="main-info__about">
                       <span class="main-info__value">176,00 ₽
                         <b class="main-info__percent">+140%</b>
@@ -285,30 +286,748 @@
                       <span class="main-info__name">Стоимость заявки</span>
 
                     </div>
+                    <span class="main-info__icon">
+                      <svg width='32' height='33'>
+                        <use href='img/sprite/sprite.svg#img4'></use>
+                      </svg>
+                    </span>
                   </div>
                 </li>
               </ul>
 
               <div class="main-analitics">
-                <ul class="main-analitics__nav">
-                  <li class="main-analitics__item">
-                    <h3 class="main-analitics__title">Аналитика</h3>
-                    <a class="main-analitics__link">подробнее</a>
-                    <canvas class="main-analitics__chart active" id="myGrafic" style="width: 870px;"></canvas>
+                <div class="main-analitics__inner">
+                  <ul class="analitics-nav">
+                    <li class="analitics-nav__item">
+                      <h3 class="main-analitics__title">Аналитика</h3>
+                      <a class="main-analitics__link">подробнее</a>
+                    </li>
+                    <li class="analitics-nav__item">
+                      <label class="radio-checkbox">
+                        <input type="radio" class="radio-checkbox__field" checked>
+                        <span class="radio-checkbox__content"></span>
+                      </label>
+                      <span class="main-analitics__name">Заявки</span>
+                    </li>
+                    <li class="analitics-nav__item">
+                      <div class="main-analitics__switch">
+                        <button class="main-analitics__btn active" type="button" data-inner-tab="1">Посетители</button>
+                        <button class="main-analitics__btn" type="button" data-inner-tab="2">Расходы</button>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="main-analitics__content">
+                    <li class="main-analitics__item active" data-inner-content="1">
+                      <canvas class="main-analitics__chart" data-grafic style="width: 800px;"></canvas>
+                    </li>
+                    <li class="main-analitics__item" data-inner-content="2">
+                      <canvas class="main-analitics__chart" data-grafic style="width: 800px;"></canvas>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="main-expenses">
+
+                  <a class="main-expenses__card main-expenses__card--general">
+                    <span class="main-expenses__icon">
+                      <svg width='56' height='56'>
+                        <use href='img/sprite/sprite.svg#coin'></use>
+                      </svg>
+                    </span>
+                    <h5 class="main-expenses__value">999999,00 ₽</h5>
+                    <span class="main-expenses__about">Общие расходы</span>
+                    <span class="main-expenses__day">+4% (30 дней)</span>
+
+                  </a>
+
+                  <ul class="main-area">
+                    <li class="main-area__item">
+                      <div class="main-area__title">Расходы по площадкам</div>
+                    </li>
+                    <li class="main-area__item">
+                      <a href="#" class="main-expenses__card">
+                        <span class="main-expenses__icon">
+                          <svg width='56' height='56'>
+                            <use href='img/sprite/sprite.svg#coin'></use>
+                          </svg>
+                        </span>
+                        <h5 class="main-expenses__value">6000,00 ₽</h5>
+                        <span class="main-expenses__about">Общие расходы</span>
+                        <span class="main-expenses__day">-4% (7 дней)</span>
+                      </a>
+                    </li>
+                    <li class="main-area__item">
+                      <a href="#" class="main-expenses__card">
+                        <span class="main-expenses__icon">
+                          <svg width='56' height='56'>
+                            <use href='img/sprite/sprite.svg#inst'></use>
+                          </svg>
+                        </span>
+                        <h5 class="main-expenses__value">19000,00 ₽</h5>
+                        <span class="main-expenses__about">Общие расходы</span>
+                        <span class="main-expenses__day">+10% (7 дней)</span>
+                      </a>
+                    </li>
+                    <li class="main-area__item">
+                      <a href="#" class="main-expenses__card">
+                        <span class="main-expenses__icon">
+                          <svg width='56' height='56'>
+                            <use href='img/sprite/sprite.svg#google'></use>
+                          </svg>
+                        </span>
+                        <h5 class="main-expenses__value">5000,00 ₽</h5>
+                        <span class="main-expenses__about">Общие расходы</span>
+                        <span class="main-expenses__day">+4% (7 дней)</span>
+                      </a>
+                    </li>
+                    <li class="main-area__item">
+                      <a href="#" class="main-expenses__card">
+                        <span class="main-expenses__icon">
+                          <svg width='56' height='56'>
+                            <use href='img/sprite/sprite.svg#inst'></use>
+                          </svg>
+                        </span>
+                        <h5 class="main-expenses__value">10000,00 ₽</h5>
+                        <span class="main-expenses__about">Общие расходы</span>
+                        <span class="main-expenses__day">+10% (7 дней)</span>
+                      </a>
+                    </li>
+                  </ul>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="index-deals" data-tab-content="2">
+          <div class="container container--mini">
+            <div class="index-deals__box">
+              <div class="deals-top main-top">
+                <h1 class="main-top__title">Сделки</h1>
+                <div class='main-top__calendar main-select select'>
+                  <input type='hidden' class='main-select__input select__input' name='default'>
+                  <div class='main-select__header select__header'>
+                    <div class='main-select__current select__current'>
+                      <svg width='26' height='28'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      31 Авг. 2021 - 06 Сен. 2021
+                    </div>
+                    <div class='select__icon'>
+                      <svg width="14" height="9">
+                        <use href='img/sprite/sprite.svg#arrow-b'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='main-select__body select__body'>
+                    <ul class='main-select__wrapp select__wrapp'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        31 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        1 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        21 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        23 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-top__inner">
+                  <span class="main-top__value">id: 534789</span>
+                  <span class="main-top__name">Дмитрий Котов</span>
+                  <div class="main-top__picture">
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img1.webp'>
+                      <img width='70' height='70' src='img/index/img1.png' alt='image'>
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="deals-nav">
+
+                <div class="deals-nav__selects">
+                  <div class='main-select select'>
+                    <input type='hidden' class='main-select__input select__input' name='default'>
+                    <div class='main-select__header select__header'>
+                      <div class='main-select__current select__current'>
+                        <svg width='18' height='18'>
+                          <use href='img/sprite/sprite.svg#img7'></use>
+                        </svg>
+                        Все статусы
+                      </div>
+                      <div class='select__icon'>
+                        <svg width="14" height="9">
+                          <use href='img/sprite/sprite.svg#arrow-b'></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='main-select__body select__body'>
+                      <ul class='main-select__wrapp select__wrapp'>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='18' height='18'>
+                            <use href='img/sprite/sprite.svg#img7'></use>
+                          </svg>
+                          Все статусы
+                        </li>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='18' height='18'>
+                            <use href='img/sprite/sprite.svg#img7'></use>
+                          </svg>
+                          С ловца
+                        </li>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='18' height='18'>
+                            <use href='img/sprite/sprite.svg#img7'></use>
+                          </svg>
+                          Заявка
+                        </li>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='18' height='18'>
+                            <use href='img/sprite/sprite.svg#img7'></use>
+                          </svg>
+                          Звонок
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class='main-select select'>
+                    <input type='hidden' class='main-select__input select__input' name='default'>
+                    <div class='main-select__header select__header'>
+                      <div class='main-select__current select__current'>
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#img8'></use>
+                        </svg>
+                        Все время
+                      </div>
+                      <div class='select__icon'>
+                        <svg width="14" height="9">
+                          <use href='img/sprite/sprite.svg#arrow-b'></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='main-select__body select__body'>
+                      <ul class='main-select__wrapp select__wrapp'>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#img8'></use>
+                          </svg>
+                          Все время
+                        </li>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#img8'></use>
+                          </svg>
+                          26 Авг 2021
+                        </li>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#img8'></use>
+                          </svg>
+                          25 Авг 2021
+                        </li>
+                        <li class='main-select__item select__item' data-choice='choosen'>
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#img8'></use>
+                          </svg>
+                          24 Авг 2021
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="deals-sort">
+                  <a href="#" class="deals-sort__link">
+                    <svg width='22' height='20'>
+                      <use href='img/sprite/sprite.svg#group1'></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="deals-sort__link">
+                    <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#group2'></use>
+                    </svg>
+                  </a>
+                  <button class="main-btn">Новая Сделка</button>
+
+                  <a href="#" class="deals-sort__link">
+                    <svg width='32' height='32'>
+                      <use href='img/sprite/sprite.svg#group3'></use>
+                    </svg>
+                  </a>
+                </div>
+
+
+              </div>
+
+              <div class="deals-applications">
+                <div class="applications-top">
+                  <ul class="applications-top__list">
+                    <li class="applications-top__item">
+                      <button class="applications-top__btn">
+                        Тип
+                        <svg width='11' height='15'>
+                          <use href='img/sprite/sprite.svg#sort'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="applications-top__item">
+                      <button class="applications-top__btn">
+                        Время
+                        <svg width='11' height='15'>
+                          <use href='img/sprite/sprite.svg#sort'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="applications-top__item">
+                      <button class="applications-top__btn">
+                        Контакт
+                        <svg width='11' height='15'>
+                          <use href='img/sprite/sprite.svg#sort'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="applications-top__item">
+                      <button class="applications-top__btn">
+                        Источник
+                        <svg width='11' height='15'>
+                          <use href='img/sprite/sprite.svg#sort'></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="applications-top__item">
+                      <button class="applications-top__btn">
+                        Статус
+                        <svg width='11' height='15'>
+                          <use href='img/sprite/sprite.svg#sort'></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="applications-list">
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess1'></use>
+                      </svg>
+                      Заявка
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Яндекс Объявления
+                      <span class="applications-list__source-coments">Купить мёд</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon'></use>
+                        </svg>
+                        Новый
+                      </span>
+                      <div class="applications-list__inner">
+                        <span class="applications-list__icon">
+                          <svg width='22' height='20'>
+                            <use href='img/sprite/sprite.svg#icon1'></use>
+                          </svg>
+                        </span>
+                        <span class="applications-list__icon">
+                          <svg width='21' height='20'>
+                            <use href='img/sprite/sprite.svg#icon2'></use>
+                          </svg>
+                        </span>
+                      </div>
+
+                    </div>
+
 
                   </li>
-                  <li class="main-analitics__item">
-                   <button class="main-analitics__btn" type="button" data-tab="1">Посетители</button>
-                   <button class="main-analitics__btn active" type="button" data-tab="2">Расходы</button>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#call'></use>
+                      </svg>
+                      Звонок
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Google.Ads
+                      <span class="applications-list__source-coments">Купить мёд</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='26' height='26'>
+                          <use href='img/sprite/sprite.svg#icon3'></use>
+                        </svg>
+                        В работе
+                      </span>
+                    </div>
                   </li>
-                </ul>
-                <ul class="main-analitics__content">
-                  <li class="main-analitics__item" data-tab-content="1"></li>
-                  <li class="main-analitics__item" data-tab-content="2">
-                   
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess2'></use>
+                      </svg>
+                      С ловца
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Яндекс Директ
+                      <span class="applications-list__source-coments">Купить мёд</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon4'></use>
+                        </svg>
+                        В оплате
+                      </span>
+                      <div class="applications-list__inner">
+                        <span class="applications-list__icon">
+                          <svg width='22' height='20'>
+                            <use href='img/sprite/sprite.svg#icon1'></use>
+                          </svg>
+                        </span>
+                      </div>
+
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess1'></use>
+                      </svg>
+                      Заявка
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Яндекс Объявления
+                      <span class="applications-list__source-coments">Купить медовую пасту с черникой и малиной</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon5'></use>
+                        </svg>
+                        Продажа
+                      </span>
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#call'></use>
+                      </svg>
+                      Звонок
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Google.Ads
+                      <span class="applications-list__source-coments">Купить мёд СПб</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon6'></use>
+                        </svg>
+                        Отказ
+                      </span>
+                      <div class="applications-list__inner">
+                        <span class="applications-list__icon">
+                          <svg width='22' height='20'>
+                            <use href='img/sprite/sprite.svg#icon1'></use>
+                          </svg>
+                        </span>
+                        <span class="applications-list__icon">
+                          <svg width='21' height='20'>
+                            <use href='img/sprite/sprite.svg#icon2'></use>
+                          </svg>
+                        </span>
+                      </div>
+
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess2'></use>
+                      </svg>
+                      С ловца
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Вконтакте
+                      <span class="applications-list__source-coments">Мёд луговой</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon7'></use>
+                        </svg>
+                        Корзина
+                      </span>
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess1'></use>
+                      </svg>
+                      Заявка
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Яндекс Объявления
+                      <span class="applications-list__source-coments">Купить мёд</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon'></use>
+                        </svg>
+                        Новый
+                      </span>
+                      <div class="applications-list__inner">
+                        <span class="applications-list__icon">
+                          <svg width='22' height='20'>
+                            <use href='img/sprite/sprite.svg#icon1'></use>
+                          </svg>
+                        </span>
+                        <span class="applications-list__icon">
+                          <svg width='21' height='20'>
+                            <use href='img/sprite/sprite.svg#icon2'></use>
+                          </svg>
+                        </span>
+                      </div>
+
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#call'></use>
+                      </svg>
+                      Звонок
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Google.Ads
+                      <span class="applications-list__source-coments">Купить мёд</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='26' height='26'>
+                          <use href='img/sprite/sprite.svg#icon3'></use>
+                        </svg>
+                        В работе
+                      </span>
+                    </div>
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess2'></use>
+                      </svg>
+                      С ловца
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Яндекс Директ
+                      <span class="applications-list__source-coments">Купить мёд</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon4'></use>
+                        </svg>
+                        В оплате
+                      </span>
+                      <div class="applications-list__inner">
+                        <span class="applications-list__icon">
+                          <svg width='22' height='20'>
+                            <use href='img/sprite/sprite.svg#icon1'></use>
+                          </svg>
+                        </span>
+                      </div>
+
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess1'></use>
+                      </svg>
+                      Заявка
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Яндекс Объявления
+                      <span class="applications-list__source-coments">Купить медовую пасту с черникой и малиной</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon5'></use>
+                        </svg>
+                        Продажа
+                      </span>
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#call'></use>
+                      </svg>
+                      Звонок
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Google.Ads
+                      <span class="applications-list__source-coments">Купить мёд СПб</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon6'></use>
+                        </svg>
+                        Отказ
+                      </span>
+                      <div class="applications-list__inner">
+                        <span class="applications-list__icon">
+                          <svg width='22' height='20'>
+                            <use href='img/sprite/sprite.svg#icon1'></use>
+                          </svg>
+                        </span>
+                        <span class="applications-list__icon">
+                          <svg width='21' height='20'>
+                            <use href='img/sprite/sprite.svg#icon2'></use>
+                          </svg>
+                        </span>
+                      </div>
+
+                    </div>
+
+
+                  </li>
+                  <li class="applications-list__item">
+                    <span class="applications-list__type">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#mess2'></use>
+                      </svg>
+                      С ловца
+                    </span>
+                    <span class="applications-list__time">26 Авг 2021 12:42</span>
+
+
+                    <span class="applications-list__contact">Василий Владимирович
+                      <span class="applications-list__contact-number">+79110001100</span>
+                    </span>
+                    <span class="applications-list__source">Вконтакте
+                      <span class="applications-list__source-coments">Мёд луговой</span>
+                    </span>
+
+                    <div class="applications-list__status">
+                      <span class="applications-list__about">
+                        <svg width='24' height='32'>
+                          <use href='img/sprite/sprite.svg#icon7'></use>
+                        </svg>
+                        Корзина
+                      </span>
+                    </div>
+
+
                   </li>
                 </ul>
               </div>
+
+
             </div>
           </div>
         </section>

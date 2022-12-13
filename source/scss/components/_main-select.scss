@@ -1,5 +1,5 @@
-.main-wallet {
-  max-width: 202px;
+.main-select {
+  
   padding: clamp(7px, 0.781vw, 15px) clamp(10px, 1.042vw, 20px);
 
   background: var(--bg-a);
@@ -30,5 +30,9 @@
     color: var(--color-f);
 
     grid-gap: clamp(5px, 0.729vw, 14px);
+  }
+
+  &__body{
+    margin-top: 20px;
   }
 }

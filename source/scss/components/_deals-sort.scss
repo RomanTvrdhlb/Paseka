@@ -1,0 +1,16 @@
+.deals-sort{
+    display: flex;
+    grid-gap: clamp(15px, 1.563vw, 30px);
+    align-items: center;
+    justify-self: end;
+
+
+    
+
+    &__link{
+    
+        &:last-child{
+            padding-left: clamp(10px, 1.042vw, 20px);
+        }
+    }
+}

@@ -54,3 +54,87 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+
+@mixin radio-checkbox{
+  position: relative;
+
+  &__field {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+ &__content {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      left: -11px;
+      top: 50%;
+      transform: translate(31%, -50%);
+      border-radius: 50%;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url(/img/sprite/dot1.svg);
+    }
+
+  }
+  
+  &__field:checked + &__content::before {
+    border-color: var(--bg-b);
+
+    background-size: 14px;
+    background-image: url(/img/sprite/dot.svg);
+  }
+
+  &__field.error + &__content::before {
+    border-color: var(--br-f);
+    background-size: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6.5' cy='6.8' r='6' fill='%23FF5D5D'/%3E%3C/svg%3E");
+  }
+
+  &__field.error + &__content {
+    color: rgba(var(--color-v),1.0);
+    text-decoration: line-through;
+    * {
+      color: inherit;
+      text-decoration: none;
+      pointer-events: none;
+    }
+  }
+
+  &__field:disabled + &__content::before {
+    background-color: rgba(var(--bg-k),1.0);
+  }
+
+}
+
+.radio-checkbox{
+  @include radio-checkbox
+}

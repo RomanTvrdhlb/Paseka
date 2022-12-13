@@ -1,0 +1,5 @@
+.deals-applications{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(10px, 1.563vw, 30px);
+}

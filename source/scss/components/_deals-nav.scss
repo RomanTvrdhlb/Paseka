@@ -1,0 +1,12 @@
+.deals-nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    &__selects{
+        display: flex;
+        grid-gap: clamp(10px, 1.563vw, 30px);
+        align-items: center;
+        max-width: 505px;
+    }
+}

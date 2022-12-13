@@ -1,0 +1,27 @@
+.applications-top {
+
+    width: 100%;
+    background:  var(--bg-j);
+    border-radius: 12px;
+    padding: clamp(12px, 1.25vw, 24px) clamp(21px, 2.188vw, 42px);
+
+    &__list {
+        display: grid;
+        grid-template-columns: 103px 87px 182px 210px 1fr;
+        align-items: center;
+        grid-gap: 64px;
+    }
+
+    &__btn{
+        font-family: var(--font-family1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(14px, 0.938vw, 18px);
+        line-height: 125%;
+        color: var(--color-a);
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 1.042vw, 20px);
+    }
+
+}

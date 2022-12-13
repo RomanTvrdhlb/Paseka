@@ -26,6 +26,12 @@
     &:hover {
       box-shadow: 0 13px 36px rgba(62, 73, 84, 0.5);
     }
+
+    &--mode{
+      .main-info__icon{
+        display: none;
+      }
+    }
   }
   &__about {
     display: flex;

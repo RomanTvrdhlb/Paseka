@@ -1,0 +1,10 @@
+.index-deals {
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0 0 10px;
+        grid-gap: clamp(15px, 1.563vw, 30px);
+    }
+
+}

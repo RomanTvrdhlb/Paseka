@@ -1,0 +1,72 @@
+.main-analitics{
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    grid-gap: clamp(10px, 1.563vw, 30px);
+    
+    &__item{
+        max-width: 800;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 2.083vw, 40px);
+        background: var(--bg-a);
+        box-shadow: 0px 12px 33px rgba(62, 73, 84, 0.08);
+        border-radius: 12px;
+        padding: clamp(20px, 2.083vw, 40px) clamp(20px, 2.083vw, 40px) clamp(20px, 2.083vw, 40px) clamp(13px, 1.354vw, 26px);
+    }
+
+    &__title{
+        font-family:  var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height:125%;
+        color: var(--color-f);
+        
+    }
+
+    &__link{
+        font-family:  var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        color: var(--color-g);
+    }
+
+    &__name{
+        font-family:  var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color:  var(--color-f);
+    }
+
+    &__switch{
+        background-color: var(--bg-g);
+        border-radius: 6px;
+        display: flex;
+        padding: 7px;
+    }
+
+    &__btn{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-j);
+        padding: 10px 20px;
+        &.active{
+            color: var(--color-f);
+            background: linear-gradient(108.31deg, #FFFFFF -4.95%, rgba(255, 255, 255, 0.92) 109.2%);
+            border-radius: 6px;
+        }
+    }
+
+
+}

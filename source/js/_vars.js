@@ -14,7 +14,7 @@ export default {
   mainData: [6000,3500,5500,6800,10000,6400,6200],
   subData: [2000,1500,3500,2800,8000,2400,4200],
   mainLabels: ['31 Авг','1 Сен','2 Сен','3 Сен','4 Сен','5 Сен','6 Сен'],
- 
+  mainGrafics: [...document.querySelectorAll("[data-grafic]")],
   
 }
 

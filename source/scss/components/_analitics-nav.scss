@@ -1,0 +1,11 @@
+.analitics-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 240px;
+    grid-gap: clamp(20px, 2.083vw, 40px);
+    align-items: center;
+
+    &__item {
+        display: flex;
+        grid-gap: clamp(10px, 1.042vw, 20px);
+    }
+}
