@@ -23,5 +23,13 @@
         align-items: center;
         grid-gap: clamp(10px, 1.042vw, 20px);
     }
+}
 
+.analitics-top{
+    padding: clamp(12px, 1.25vw, 24px) clamp(10px, 1.146vw, 22px);
+
+    &__list{
+        grid-template-columns: 159px 140px 100px 55px 90px 95px;
+        grid-gap: clamp(21px, 2.188vw, 42px);
+    }
 }

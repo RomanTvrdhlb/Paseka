@@ -203,7 +203,8 @@ input[type="number"] {
 }
 
 [data-tab-content],
-[data-inner-content] {
+[data-inner-content],
+[data-analitics-content] {
   display: none;
 
   &.active {

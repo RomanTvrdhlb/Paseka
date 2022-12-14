@@ -29,6 +29,7 @@ function tabFunktion(initAttr, navAttr, contentAttr, activeClass = 'active'){
 
 tabFunktion(tabParents, 'data-tab', 'data-tab-content');
 tabFunktion(tabParents, 'data-inner-tab', 'data-inner-content');
+tabFunktion(tabParents, 'data-analitics-tab', 'data-analitics-content');
 
 
 

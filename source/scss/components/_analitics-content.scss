@@ -1,0 +1,17 @@
+.analitics-content{
+
+
+    &__phrases{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: clamp(15px, 1.563vw, 30px);
+    }
+
+    &__inner{
+        grid-gap: clamp(15px, 1.563vw, 30px);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 870px;
+    }
+}

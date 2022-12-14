@@ -58,11 +58,10 @@
   &__wallet{
     max-width: 202px;
   }
-}
 
-
-.deals-top{
-  grid-template-columns: auto repeat(2, 1fr);
-  grid-gap: clamp(20px, 4.792vw, 92px);
-  margin-bottom: clamp(10px, 1.042vw, 20px);
+  &--mode{
+    grid-template-columns: auto repeat(2, 1fr);
+    grid-gap: clamp(20px, 4.792vw, 92px);
+    margin-bottom: clamp(10px, 1.042vw, 20px);
+  }
 }

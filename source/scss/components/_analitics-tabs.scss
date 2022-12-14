@@ -1,0 +1,28 @@
+.analitics-tabs{
+    display: grid;
+    grid-gap: clamp(20px, 2.969vw, 57px);
+    align-items: center;
+    grid-template-columns: repeat(5, auto) 1fr;
+    max-width: 870px;
+
+    &__item{
+width: 100%;
+        &--end{
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    &__btn{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.938vw, 18px);
+        line-height: 125%;
+        color: var(--color-f);
+
+        &.active{
+            color: var(--color-k);
+        }
+    }
+}

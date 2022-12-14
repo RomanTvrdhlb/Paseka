@@ -1,0 +1,46 @@
+.main-filter{
+    display: flex;
+    flex-direction: column;
+    padding: clamp(10px, 1.563vw, 30px) clamp(13px, 1.354vw, 26px);
+    background: var(--bg-a);
+    box-shadow: 0px 12px 33px rgba(62, 73, 84, 0.08);
+    border-radius: 20px;
+    height: fit-content;
+
+    &__title{
+        padding-bottom: clamp(10px, 1.563vw, 30px);
+        font-family: ar(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-f);
+        border-bottom: solid 1px var(--bg-f);
+    }
+
+    &__box{
+        padding-top: clamp(10px, 1.563vw, 30px);
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(14px, 1.458vw, 28px);
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(7px, 0.677vw, 13px);
+    }
+
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 10px;
+    }
+
+    &__more{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(7px, 0.677vw, 13px);
+    }
+}

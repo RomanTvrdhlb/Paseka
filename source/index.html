@@ -404,7 +404,7 @@
         <section class="index-deals" data-tab-content="2">
           <div class="container container--mini">
             <div class="index-deals__box">
-              <div class="deals-top main-top">
+              <div class="main-top--mode main-top">
                 <h1 class="main-top__title">Сделки</h1>
                 <div class='main-top__calendar main-select select'>
                   <input type='hidden' class='main-select__input select__input' name='default'>
@@ -463,7 +463,6 @@
               </div>
 
               <div class="deals-nav">
-
                 <div class="deals-nav__selects">
                   <div class='main-select select'>
                     <input type='hidden' class='main-select__input select__input' name='default'>
@@ -1032,6 +1031,312 @@
           </div>
         </section>
 
+        <section class="index-analitics" data-tab-content="3">
+          <div class="container container--mini">
+            <div class="index-analitics__box">
+              <div class="main-top--mode main-top">
+                <h1 class="main-top__title">Аналитика</h1>
+                <div class='main-top__calendar main-select select'>
+                  <input type='hidden' class='main-select__input select__input' name='default'>
+                  <div class='main-select__header select__header'>
+                    <div class='main-select__current select__current'>
+                      <svg width='26' height='28'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      31 Авг. 2021 - 06 Сен. 2021
+                    </div>
+                    <div class='select__icon'>
+                      <svg width="14" height="9">
+                        <use href='img/sprite/sprite.svg#arrow-b'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='main-select__body select__body'>
+                    <ul class='main-select__wrapp select__wrapp'>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        31 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        1 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        21 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                      <li class='main-select__item select__item' data-choice='choosen'>
+                        <svg width='26' height='28'>
+                          <use href='img/sprite/sprite.svg#calendar'></use>
+                        </svg>
+                        23 Авг. 2021 - 06 Сен. 2021
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-top__inner">
+                  <span class="main-top__value">id: 534789</span>
+                  <span class="main-top__name">Дмитрий Котов</span>
+                  <div class="main-top__picture">
+                    <picture>
+                      <source type='image/webp' srcset='img/index/img1.webp'>
+                      <img width='70' height='70' src='img/index/img1.png' alt='image'>
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+                <ul class="analitics-tabs">
+                  <li class="analitics-tabs__item">
+                   <button class="analitics-tabs__btn" type="button" data-analitics-tab="1">Статистика</button>
+                  </li>
+                  <li class="analitics-tabs__item">
+                   <button class="analitics-tabs__btn active" type="button" data-analitics-tab="2">Фразы</button>
+                  </li>
+                  <li class="analitics-tabs__item">
+                   <button class="analitics-tabs__btn" type="button" data-analitics-tab="3">Площадки</button>
+                  </li>
+                  <li class="analitics-tabs__item">
+                   <button class="analitics-tabs__btn" type="button" data-analitics-tab="4">Регионы</button>
+                  </li>
+                  <li class="analitics-tabs__item">
+                   <button class="analitics-tabs__btn" type="button" data-analitics-tab="5">Объявления</button>
+                  </li>
+                  <li class="analitics-tabs__item analitics-tabs__item--end">
+                   <span class="analitics-tabs__icon">
+                    <svg width='32' height='32'>
+                      <use href="img/sprite/sprite.svg#group3"></use>
+                    </svg>
+                   </span>
+                  </li>
+                </ul>
+
+                <ul class="analitics-content">
+                  <li class="analitics-content__item" data-analitics-content="1">123</li>
+                  <li class="analitics-content__item active" data-analitics-content="2">
+
+                    <div class="analitics-content__phrases">
+                      <div class="analitics-content__inner">
+
+                    <div class="analitics-top applications-top">
+                      <ul class="analitics-top__list applications-top__list">
+                        <li class="applications-top__item">
+                          <button class="applications-top__btn">
+                            Фраза
+                            <svg width='11' height='15'>
+                              <use href='img/sprite/sprite.svg#sort'></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="applications-top__item">
+                          <button class="applications-top__btn">
+                            Компания
+                            <svg width='11' height='15'>
+                              <use href='img/sprite/sprite.svg#sort'></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="applications-top__item">
+                          <button class="applications-top__btn">
+                            Заказы
+                            <svg width='11' height='15'>
+                              <use href='img/sprite/sprite.svg#sort'></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="applications-top__item">
+                          <button class="applications-top__btn">
+                            СЗ
+                            <svg width='11' height='15'>
+                              <use href='img/sprite/sprite.svg#sort'></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="applications-top__item">
+                          <button class="applications-top__btn">
+                            Посет.
+                            <svg width='11' height='15'>
+                              <use href='img/sprite/sprite.svg#sort'></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="applications-top__item">
+                          <button class="applications-top__btn">
+                            Расход
+                            <svg width='11' height='15'>
+                              <use href='img/sprite/sprite.svg#sort'></use>
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <ul class="analitics-list applications-list">
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Купить мёд</span>
+                        <span class="applications-list__company">Первая кампания Яндекс</span>
+                        <span class="applications-list__value">10</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">100</span>
+                        <span class="applications-list__value">2 052 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Купить мёд СПБ</span>
+                        <span class="applications-list__company">Вторая кампания Яндекс</span>
+                        <span class="applications-list__value">25</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">200</span>
+                        <span class="applications-list__value">5 052 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Натуральный мёд</span>
+                        <span class="applications-list__company">Третья кампания
+                          Яндекс</span>
+                        <span class="applications-list__value">6</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">100</span>
+                        <span class="applications-list__value">12 052 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Натуральный мёд с черникой, малиной и другими ягодами</span>
+                        <span class="applications-list__company">Кампания
+                          Вконтакте</span>
+                        <span class="applications-list__value">1</span>
+                        <span class="applications-list__value">1383 ₽</span>
+                        <span class="applications-list__value">9</span>
+                        <span class="applications-list__value">6 052 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Мёд луговой</span>
+                        <span class="applications-list__company">Кампания Facebook</span>
+                        <span class="applications-list__value">12</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">50</span>
+                        <span class="applications-list__value">9 052 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Мёд луговой СПб</span>
+                        <span class="applications-list__company">Первая кампания
+                          Google</span>
+                        <span class="applications-list__value">18</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">70</span>
+                        <span class="applications-list__value">10 967 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Мёд луговой
+                          Леновласть</span>
+                        <span class="applications-list__company">Вторая кампания
+                          Google</span>
+                        <span class="applications-list__value">3</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">10</span>
+                        <span class="applications-list__value">3 415 ₽</span>
+                      </li>
+                      <li class="analitics-list__item applications-list__item">
+                        <span class="applications-list__contact">Купить луговой
+                          мёд</span>
+                        <span class="applications-list__company">Третья кампания
+                          Google</span>
+                        <span class="applications-list__value">10</span>
+                        <span class="applications-list__value">283 ₽</span>
+                        <span class="applications-list__value">100</span>
+                        <span class="applications-list__value">6 808 ₽</span>
+                      </li>
+                    </ul>
+                      </div>
+                      <div class="main-filter">
+                        <h6 class="main-filter__title">Фильтр по кампаниям</h6>
+                        <div class="main-filter__box">
+                          <div class="main-filter__top">
+                          <label class="radio-checkbox">
+                            <input type="radio" class="radio-checkbox__field" name="all" checked>
+                            <span class="radio-checkbox__content">Все</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" class="radio-checkbox__field" name="all">
+                            <span class="radio-checkbox__content">Активные</span>
+                          </label>
+                        </div>
+                        <ul class="main-filter__list">
+                          <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Первая кампания Яндекс</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Вторая кампания Яндекс</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Третья кампания Яндекс</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Кампания Вконтакте</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Кампания Facebook</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Первая кампания Google</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Вторая кампания Google</span>
+                          </label>
+                        </li>
+                        <li class="main-filter__item">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Третья кампания Google</span>
+                          </label>
+                        </li>
+                        </ul>
+                        <div class="main-filter__more">
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content custom-checkbox__content--yellow">Звонки с рекламы</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content custom-checkbox__content--yellow">Другие источники</span>
+                          </label>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="analitics-content__item" data-analitics-content="3">123</li>
+                  <li class="analitics-content__item" data-analitics-content="4">123</li>
+                  <li class="analitics-content__item" data-analitics-content="5">123</li>
+                </ul>
+
+
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
