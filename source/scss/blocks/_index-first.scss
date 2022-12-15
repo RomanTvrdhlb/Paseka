@@ -9,7 +9,7 @@
 // @include mobile {
 //     padding-bottom: 36px;
 //   }
-
+padding-bottom: clamp(30px, 3.75vw, 72px);
   &__box {
     display: flex;
     flex-direction: column;

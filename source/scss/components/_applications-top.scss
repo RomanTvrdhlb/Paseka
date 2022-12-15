@@ -33,3 +33,10 @@
         grid-gap: clamp(21px, 2.188vw, 42px);
     }
 }
+
+.statistics-top{
+    &__list{
+        grid-template-columns: 156px 102px 91px 84px 118px 113px 95px 62px 57px;
+        grid-gap: clamp(13px, 1.354vw, 26px);
+    }
+}

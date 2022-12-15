@@ -64,4 +64,10 @@
     grid-gap: clamp(20px, 4.792vw, 92px);
     margin-bottom: clamp(10px, 1.042vw, 20px);
   }
+
+  &--second{
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: clamp(20px, 2.083vw, 40px);
+    margin-bottom: clamp(10px, 1.042vw, 20px);
+  }
 }

@@ -1,0 +1,32 @@
+.main-image{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: clamp(5px, 0.573vw, 11px) clamp(10px, 0.938vw, 18px);
+
+
+    &__pic{
+        grid-row: span 2;
+        width: clamp(35px, 3.646vw, 70px);
+        height: clamp(35px, 3.646vw, 70px);
+        background-color: var(--bg-q);
+        border-radius: 50%;
+    }
+
+    &__title{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(16px, 0.938vw, 18px);
+        line-height: 125%;
+        color: var(--color-f);
+    }
+
+    &__btn{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-g);
+    }
+}

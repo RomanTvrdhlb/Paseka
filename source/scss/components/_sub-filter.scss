@@ -1,0 +1,40 @@
+.sub-filter{
+    display: flex;
+
+    background: var(--bg-a);
+    box-shadow: 0px 12px 33px rgba(62, 73, 84, 0.08);
+    border-radius: 20px;
+    padding: clamp(10px, 1.094vw, 21px) clamp(20px, 2.604vw, 50px);
+    align-items: center;
+    grid-gap: clamp(15px, 1.51vw, 29px);
+
+    &__title{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: var(--color-f);
+        position: relative;
+        padding-right: clamp(20px, 2.135vw, 41px);
+
+        &::before{
+            position: absolute;
+            content: "";
+            right: 0;
+            width: 1px;
+            height: calc(100% + (clamp(10px, 1.094vw, 21px) * 2));
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--bg-f);
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(5px, 0.677vw, 13px);
+    }
+
+}

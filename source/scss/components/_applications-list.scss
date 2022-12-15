@@ -121,11 +121,16 @@
 }
 
 .analitics-list{
-
     &__item{
         grid-template-columns: 159px 140px 100px 55px 90px 95px;
         grid-gap: clamp(21px, 2.188vw, 42px);
         padding: 10px clamp(10px, 1.146vw, 22px);
+    }
+}
 
+.statistics-list{
+    &__item{
+        grid-template-columns: 156px 102px 91px 84px 118px 113px 95px 62px 57px;
+        grid-gap: clamp(13px, 1.354vw, 26px);
     }
 }

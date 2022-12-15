@@ -1,5 +1,33 @@
 .analitics-content{
 
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 1.563vw, 30px);
+    }
+
+    &__wrapp{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: clamp(15px, 1.563vw, 30px);
+    }
+
+    &__statistics{
+        padding: clamp(20px, 2.083vw, 40px) clamp(23px, 2.344vw, 45px) clamp(20px, 2.083vw, 40px) clamp(13px, 1.354vw, 26px);
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 1.563vw, 30px);
+        background: var(--bg-a);
+        box-shadow: 0px 12px 33px rgba(62, 73, 84, 0.08);
+        border-radius: 12px;
+        max-width: 870px;
+    }
+
+    &__nav{
+        display: grid;
+        grid-template-columns: repeat(2, auto) 265px;
+        grid-gap: clamp(20px, 2.292vw, 44px);
+    }
 
     &__phrases{
         display: grid;
@@ -13,5 +41,17 @@
         flex-direction: column;
         width: 100%;
         max-width: 870px;
+    }
+
+    &__filters{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: clamp(15px, 1.563vw, 30px);
+    }
+
+    &__select{
+        max-width: 145px;
+        box-shadow: initial;
+        border-radius: initial;
     }
 }

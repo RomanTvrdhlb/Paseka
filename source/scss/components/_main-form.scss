@@ -1,0 +1,45 @@
+.main-form{
+    
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 1.563vw, 30px);
+
+    &__subtitle{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-f);
+
+        svg{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        max-width: 518px;
+        position: relative;
+    }
+
+    &__input{
+        font-family: var(--font-family);
+        font-style: italic;
+        font-weight: 300;
+        font-size: clamp(14px, 0.833vw, 16px);
+        line-height: 125%;
+        color: var(--color-b);
+        padding: 11px 0;
+
+        border-bottom: solid 2px  var(--color-j);
+
+        &::placeholder{
+            color: var(--color-j);
+        }
+    }
+}

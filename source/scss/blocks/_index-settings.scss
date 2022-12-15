@@ -1,11 +1,11 @@
-.index-deals {
-
+.index-settings{
     padding-bottom: clamp(30px, 3.75vw, 72px);
-    &__box {
+
+    &__box{
         display: flex;
         flex-direction: column;
         padding: 25px 0 0 10px;
         grid-gap: clamp(15px, 1.563vw, 30px);
-    }
 
+    }
 }
