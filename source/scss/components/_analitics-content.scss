@@ -12,6 +12,10 @@
         grid-gap: clamp(15px, 1.563vw, 30px);
     }
 
+    &__tabs{
+        min-height: 380px;
+    }
+
     &__statistics{
         padding: clamp(20px, 2.083vw, 40px) clamp(23px, 2.344vw, 45px) clamp(20px, 2.083vw, 40px) clamp(13px, 1.354vw, 26px);
         display: flex;
@@ -35,6 +39,7 @@
         grid-gap: clamp(15px, 1.563vw, 30px);
     }
 
+  
     &__inner{
         grid-gap: clamp(15px, 1.563vw, 30px);
         display: flex;

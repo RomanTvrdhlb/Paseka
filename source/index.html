@@ -37,7 +37,7 @@
                     Сделки</button>
                 </li>
                 <li class="aside-nav__item">
-                  <button class="aside-nav__btn" type="button" data-tab="3">
+                  <button class="aside-nav__btn active" type="button" data-tab="3">
                     <span class="aside-nav__icon">
                       <svg width='18' height='20'>
                         <use href='img/sprite/sprite.svg#img1'></use>
@@ -47,25 +47,25 @@
 
                   <ul class="aside-sublist">
                     <li class="aside-sublist__item">
-                      <button class="aside-sublist__btn" type="button">Статистика</button>
+                      <button class="aside-sublist__btn active" data-aside-nav="1" type="button">Статистика</button>
                     </li>
                     <li class="aside-sublist__item">
-                      <button class="aside-sublist__btn" type="button">Фразы</button>
+                      <button class="aside-sublist__btn" data-aside-nav="2" type="button">Фразы</button>
                     </li>
                     <li class="aside-sublist__item">
-                      <button class="aside-sublist__btn" type="button">Площадки</button>
+                      <button class="aside-sublist__btn" data-aside-nav="3" type="button">Площадки</button>
                     </li>
                     <li class="aside-sublist__item">
-                      <button class="aside-sublist__btn" type="button">Регионы</button>
+                      <button class="aside-sublist__btn" data-aside-nav="4" type="button">Регионы</button>
                     </li>
                     <li class="aside-sublist__item">
-                      <button class="aside-sublist__btn" type="button">Объявления</button>
+                      <button class="aside-sublist__btn" data-aside-nav="5" type="button">Объявления</button>
                     </li>
                   </ul>
                 </li>
 
                 <li class="aside-nav__item">
-                  <button class="aside-nav__btn  active" type="button" data-tab="4">
+                  <button class="aside-nav__btn" type="button" data-tab="4">
                     <span class="aside-nav__icon">
                       <svg width='18' height='20'>
                         <use href='img/sprite/sprite.svg#mess'></use>
@@ -1031,7 +1031,7 @@
           </div>
         </section>
 
-        <section class="index-analitics" data-tab-content="3">
+        <section class="index-analitics active" data-tab-content="3">
           <div class="container container--mini">
             <div class="index-analitics__box">
               <div class="main-top--mode main-top">
@@ -1124,6 +1124,7 @@
                     <div class="analitics-content__wrapp">
                       <div class="analitics-content__statistics">
                         <div class="analitics-content__nav">
+
                           <div class='analitics-content__select main-select select'>
                             <input type='hidden' class='main-select__input select__input' name='default'>
                             <div class='main-select__header select__header'>
@@ -1203,13 +1204,25 @@
                           </div>
 
                           <div class="main-switch">
-                            <button class="main-switch__btn" type="button">Месяц</button>
-                            <button class="main-switch__btn" type="button">Неделя</button>
-                            <button class="main-switch__btn active" type="button">День</button>
+                            <button class="main-switch__btn active" data-statistics-tab="1" type="button">Месяц</button>
+                            <button class="main-switch__btn" data-statistics-tab="2" type="button">Неделя</button>
+                            <button class="main-switch__btn" data-statistics-tab="3" type="button">День</button>
                           </div>
+
                         </div>
-                        <canvas class="main-analitics__chart" data-grafic style="width: 800px;"></canvas>
+
+                        <div class="analitics-content__tabs active"  data-statistics-content="1">
+                          <canvas class="main-analitics__chart" data-grafic style="width: 800px;"></canvas>
+                        </div>
+                        <div class="analitics-content__tabs"  data-statistics-content="2">
+                          <canvas class="main-analitics__chart" data-grafic style="width: 800px;"></canvas>
+                        </div>
+                        <div class="analitics-content__tabs"  data-statistics-content="3">
+                          <canvas class="main-analitics__chart" data-grafic style="width: 800px;"></canvas>
+                        </div>
                       </div>
+
+
                       <div class="main-filter">
                         <h6 class="main-filter__title">Фильтр по кампаниям</h6>
                         <div class="main-filter__box">
@@ -1416,7 +1429,7 @@
                       </ul>
                     </div>
 
-                    <ul class="statistics-list applications-list">
+                    <ul class="statistics-list applications-list" data-show="3">
                       <li class="statistics-list__item applications-list__item">
                         <span class="applications-list__company">Первая кампания Яндекс</span>
                         <span class="applications-list__value">2052</span>
@@ -1506,6 +1519,8 @@
                         <span class="applications-list__value">18 000 ₽</span>
                       </li>
                     </ul>
+
+                      <button class="click">Показать еще</button>
 
                   </div>
 
@@ -1732,7 +1747,7 @@
           </div>
         </section>
 
-        <section class="index-settings active" data-tab-content="4">
+        <section class="index-settings" data-tab-content="4">
           <div class="container container--mini">
             <div class="index-settings__box">
               <div class="main-top--second main-top">
@@ -1882,8 +1897,8 @@
                         <use href='img/sprite/sprite.svg#form1'></use>
                       </svg>
                     </span>
-                    <input type="text" id="message"
-                      placeholder="Оставьте номер телефона, и мы Вам перезвоним!" class="main-form__input">
+                    <input type="text" id="message" placeholder="Оставьте номер телефона, и мы Вам перезвоним!"
+                      class="main-form__input">
                   </label>
                   <label for="message" class="main-form__label">
                     <span class="main-form__subtitle">Текст уведомления
@@ -1956,7 +1971,7 @@
                         </li>
                         <li class="main-settings__value">
                           <label class="radio-checkbox">
-                            <input type="radio" class="radio-checkbox__field" checked  name="design-form">
+                            <input type="radio" class="radio-checkbox__field" checked name="design-form">
                             <span class="radio-checkbox__content">2</span>
                           </label>
                         </li>
@@ -1986,8 +2001,7 @@
                             <use href='img/sprite/sprite.svg#form1'></use>
                           </svg>
                         </span>
-                        <input type="text" id="call" placeholder="Перезвоните мне"
-                          class="main-form__input">
+                        <input type="text" id="call" placeholder="Перезвоните мне" class="main-form__input">
                       </label>
                     </form>
 
@@ -1999,6 +2013,50 @@
                   </div>
                 </div>
 
+              </div>
+
+
+              <div class="main-message">
+                <h6 class="main-message__title">Уведомление о зявке </h6>
+                <p>При поступлении заявки через сайт мы можем уведомить вас об этом.</p>
+                <ul class="main-message__list">
+                  <li class="main-message__item">
+                    <span class="main-message__icon">
+                      <svg width='56' height='52'>
+                        <use href='img/sprite/sprite.svg#img9'></use>
+                      </svg>
+                    </span>
+                    <label class="radio-checkbox--mode radio-checkbox">
+                      <input type="radio" class="radio-checkbox__field" name="message">
+                      <span class="radio-checkbox__content">Браузер</span>
+                    </label>
+                    <a class="main-message__text">Подписаться</a>
+                  </li>
+                  <li class="main-message__item">
+                    <span class="main-message__icon">
+                      <svg width='56' height='52'>
+                        <use href='img/sprite/sprite.svg#img11'></use>
+                      </svg>
+                    </span>
+                    <label class="radio-checkbox--mode radio-checkbox">
+                      <input type="radio" class="radio-checkbox__field" name="message">
+                      <span class="radio-checkbox__content">Telegram</span>
+                    </label>
+                    <a class="main-message__text">Подписаться</a>
+                  </li>
+                  <li class="main-message__item">
+                    <span class="main-message__icon">
+                      <svg width='56' height='52'>
+                        <use href='img/sprite/sprite.svg#img12'></use>
+                      </svg>
+                    </span>
+                    <label class="radio-checkbox--mode radio-checkbox">
+                      <input type="radio" class="radio-checkbox__field" name="message">
+                      <span class="radio-checkbox__content">На почту</span>
+                    </label>
+                    <a class="main-message__text">Подписаться</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

@@ -27,3 +27,23 @@
     transform: scale(1.02);
   }
 }
+
+
+.click{
+  background-color: var(--bg-j);
+  padding: 15px 40px;
+  width: fit-content;
+  font-family: var(--font-family1);
+  font-size: clamp(14px, 0.938vw, 18px);
+  color: var(--color-a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 12px;
+  transition: all .4s;
+
+  &:hover{
+    transform: scale(1.02);
+  }
+}

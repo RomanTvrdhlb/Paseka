@@ -10,4 +10,5 @@
 import './components/select';
 import './components/tabs';
 import './components/chart';
+import './components/showMore';
 

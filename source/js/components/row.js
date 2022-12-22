@@ -44,6 +44,4 @@ if (imagesAccordion) {
   window.addEventListener('DOMContentLoaded', () => {
       accordionGrid();
   });
-
-
 }

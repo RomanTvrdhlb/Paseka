@@ -151,6 +151,23 @@
     background-color: rgba(var(--bg-k),1.0);
   }
 
+
+
+  &--mode{
+    .radio-checkbox__content{
+      flex-direction: row-reverse;
+
+      &:before{
+        margin:0 0 0 17px;
+      }
+
+      &:after{
+        right: 3px;
+        margin: initial;
+        left: initial;
+      }
+    }
+  }
 }
 
 .radio-checkbox{

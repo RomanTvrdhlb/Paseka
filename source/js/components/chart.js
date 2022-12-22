@@ -7,7 +7,7 @@ Chart.defaults.font.size = 14;
 Chart.defaults.font.weight = 300;
 Chart.defaults.color = '#3E4954';
 
-// const mainGrafic = document.getElementById('myGrafic');
+
 const { mainData, subData, mainLabels, mainGrafics} = vars;
 
 const startColor = 'rgba(92, 75, 167, 0.8)';
